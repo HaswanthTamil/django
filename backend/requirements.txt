@@ -43,3 +43,8 @@ tzdata==2025.2
 urllib3==2.2.3
 websocket-client==1.8.0
 wsproto==1.2.0
+Django>=4.2
+gunicorn
+psycopg2-binary 
+python-decouple
+django-debug-toolbar
