@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+:root {
+    --mint: #00cc9e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.task-box {
+  position: relative;
+  background-color: transparent;
+  color: #e5e5e5;
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px ridge #2e2e2e;
+  border-radius: 10px;
+}
+
+/* Top-left mint corner */
+.task-box::before {
+  content: '';
+  position: absolute;
+  top: -2;
+  left: -2;
+  width: 25%;
+  max-width: 50px;
+  height: 25%;
+  max-height: 50px;
+  border-top: 4px solid var(--mint);
+  border-left: 4px solid var(--mint);
+}
+
+/* Bottom-right mint corner */
+.task-box::after {
+  content: '';
+  position: absolute;
+  bottom: -2;
+  right: -2;
+  width: 25%;
+  max-width: 50px;
+  height: 25%;
+  max-height: 50px;
+  border-bottom: 4px solid var(--mint);
+  border-right: 4px solid var(--mint);
+}
